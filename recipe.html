@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal App | Recipe</title>
+
+    <link rel="stylesheet" href="./CSS/recipe.css" />
+    <link rel="stylesheet" href="./CSS/main.css" />
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script src="./JS/recipe.js" defer /></script>
+</head>
+<body>
+<header>
+    <a href="#nav" id="menu-ico">
+        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828551.png">
+    </a>
+
+    <a href="./index.html" id="m-home-page-link">
+        <div id="logo">
+            <img src="https://visualpharm.com/assets/654/Meal-595b40b75ba036ed117d8d86.svg">
+            <h1>Meal App</h1>
+        </div>
+    </a>
+
+    <nav id="nav">
+        <a href="#main" id="close-btn">
+            <img src="https://cdn-icons-png.flaticon.com/512/1828/1828778.png">
+        </a>
+        <a href="./index.html" id="home-page-link">
+            <div id="logo">
+                <img src="https://visualpharm.com/assets/654/Meal-595b40b75ba036ed117d8d86.svg">
+                <h1>Meal App</h1>
+            </div>
+        </a>
+
+        <ul class="menu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./favourites.html">Favorites</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+        <ul id="social-icons">
+            <li>
+                <a href="https://www.facebook.com" target="_blank" class="social-icon"><ion-icon class="fb" name="logo-facebook"></ion-icon></a>
+            </li>
+            <li>
+                <a href="https://twitter.com" target="_blank" class="social-icon"><ion-icon class="twitter" name="logo-twitter"></ion-icon></a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com" target="_blank" class="social-icon"><ion-icon class="youtube" name="logo-youtube"></ion-icon></i></a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com" target="_blank" class="social-icon"><ion-icon class="linkedin" name="logo-linkedin"></ion-icon></a>
+            </li>
+            <li>
+                <a href="https://github.com" target="_blank" class="social-icon"><ion-icon class="github" name="logo-github"></ion-icon></a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <div class="left-container">
+        <div id="recipe">
+            <div class="sec-center">
+                <input
+                        class="dropdown"
+                        type="checkbox"
+                        id="dropdown"
+                        name="dropdown"
+                />
+                <label class="for-dropdown" for="dropdown"
+                >Ingredients <i class="uil uil-arrow-down"></i
+                ></label>
+                <div id="section-dropdown"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="right-container"></div>
+</main>
+</body>
+</html>
