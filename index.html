@@ -1,0 +1,99 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/main.css" />
+    <link rel="stylesheet" href="CSS/caraousel.css" />
+    <link rel="stylesheet" href="CSS/mealcard.css" />
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./JS/index.js" defer></script>
+    <title>Meal App</title>
+</head>
+<body>
+<!-- Header Setion -->
+<header>
+    <a href="#nav" id="menu-ico"><img src="https://cdn-icons-png.flaticon.com/512/1828/1828551.png"></a>
+
+    <a href="./index.html" id="m-home-page-link">
+        <div id="logo">
+            <img src="https://visualpharm.com/assets/654/Meal-595b40b75ba036ed117d8d86.svg">
+            <h1>Meal App</h1>
+        </div>
+    </a>
+
+    <!-- Navigation Bar -->
+    <nav id="nav">
+        <a href="#main" id="close-btn"><img src="https://cdn-icons-png.flaticon.com/512/1828/1828778.png"></a>
+        <a href="./index.html" id="home-page-link">
+            <div id="logo">
+                <img src="https://visualpharm.com/assets/654/Meal-595b40b75ba036ed117d8d86.svg">
+                <h1>Meal App</h1>
+            </div>
+        </a>
+
+        <!-- Menu Items -->
+        <ul class="menu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./favourites.html">Favorites</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+
+        <!-- Social Icons -->
+        <ul id="social-icons">
+            <li>
+                <a href="https://www.facebook.com" target="_blank" class="social-icon"><ion-icon class="fb" name="logo-facebook"></ion-icon></a>
+            </li>
+            <li>
+                <a href="https://twitter.com" target="_blank" class="social-icon"><ion-icon class="twitter" name="logo-twitter"></ion-icon></a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com" target="_blank" class="social-icon"><ion-icon class="youtube" name="logo-youtube"></ion-icon></i></a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com" target="_blank" class="social-icon"><ion-icon class="linkedin" name="logo-linkedin"></ion-icon></a>
+            </li>
+            <li>
+                <a href="https://github.com" target="_blank" class="social-icon"><ion-icon class="github" name="logo-github"></ion-icon></a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Home page Section -->
+<section id="welcome-page">
+    <div id="slideshow">
+        <div class="container">
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+        </div>
+    </div>
+    <a href="#main">
+        <div id="search-logo">
+            <h6>Search Meal</h6>
+            <img src="./img/search.svg">
+        </div>
+    </a>
+</section>
+
+<section id="main">
+    <div id="search-bar">
+        <form class="search-bar">
+            <input type="search" id="search-value" name="search" pattern=".*\S." required>
+            <button class="search-btn" id="search-btn" type="submit">
+                <span>Search</span>
+            </button>
+        </form>
+    </div>
+    <div id="meal-cards-wrapper">
+        <ul id="meals-list"></ul>
+    </div>
+
+    <div id="cards-page"></div>
+</section>
+</body>
+</html>
